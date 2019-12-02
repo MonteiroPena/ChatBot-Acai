@@ -12,6 +12,7 @@
     "express": "^4.17.1",
     "history": "^4.10.1",
     "jquery": "^3.4.1",
+    "materialize": "^1.0.0",
     "materialize-css": "^1.0.0-rc.2",
     "normalize.css": "^8.0.1",
     "react": "^16.12.0",

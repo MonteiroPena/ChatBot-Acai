@@ -16,10 +16,17 @@ export default class PedidosChat extends React.Component {
 				<div className="row">
 					<nav className='home-sidebar'>
 						<SidebarComponent />
-						<img className="format-img-pedido" src="https://scontent.fsjk2-1.fna.fbcdn.net/v/t1.0-9/p960x960/77184963_1520497128133076_1144388276468056064_o.jpg?_nc_cat=104&_nc_ohc=uSNT4ZLYNV8AQnwiwHlszAm56q1Mn5IVtiGaUU5gvi2USvbzhiT0p8qRw&_nc_ht=scontent.fsjk2-1.fna&oh=476997515c9283cf5a7e390af4bb5c74&oe=5E8126AC"/>
+						<img className="format-img-pedido" src="https://scontent.fsjk2-1.fna.fbcdn.net/v/t1.0-9/p960x960/77184963_1520497128133076_1144388276468056064_o.jpg?_nc_cat=104&_nc_ohc=uSNT4ZLYNV8AQnwiwHlszAm56q1Mn5IVtiGaUU5gvi2USvbzhiT0p8qRw&_nc_ht=scontent.fsjk2-1.fna&oh=476997515c9283cf5a7e390af4bb5c74&oe=5E8126AC" />
 					</nav>
 					<div className="home-main">
-						<input type="text" name="username" placeholder="Digite o seu nome" />
+						<div>
+							<form >
+								<div>
+									<button class="btn waves-effect waves-light format-btn-inserir-nome" type="submit" name="action">Inserir meu Nome</button>
+									<input className="format-input-inserir-nome" type="text" placeholder="Digite o seu nome" />
+								</div>
+							</form>
+						</div>
 						<div className="mensagens-format">
 							<Chat />
 						</div>
