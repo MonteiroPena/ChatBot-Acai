@@ -24,16 +24,21 @@
 
 .format-img-pedido{
     height: 16rem;
-    width: 30rem;
+    width: 28rem;
 }
 .format-btn-inserir-nome{
 	width: 190px;
 	height: 50px;
-    background-color: rgb(3, 75, 3);
+    background-color: rgb(15, 155, 15);
 	border-radius: 10px;
 	margin: 10px;
 	color: aliceblue;
 }
+.format-btn-inserir-nome:hover{
+    background-color: #00ff00;
+    color: rgba(184, 0, 251, 0.727);
+}
+
 .format-input-inserir-nome{
 	width: 600px !important;
 	margin: 10, 10,10,10 !important;
