@@ -6,9 +6,70 @@ import SidebarComponent from "../../Components/Sidebar/Sidebar";
 import Header from '../../Components/Header/Header';
 // Estilizações
 import './PedidosChat-style.css'
+import { Authenticate } from '../../services/authenticate';
+
 
 export default class PedidosChat extends React.Component {
 
+	constructor(props) {
+		super(props);
+		this.handleClick = this.handleClick.bind(this);
+		this.handleTextChange = this.handleTextChange.bind(this);
+	//	this.handleSubmit = this.handleSubmit.bind(this);
+		this.state = { name: '', token: '', validacao: false }
+	}
+
+
+
+	handleClick(e) {
+		Authenticate().then(
+			token => {
+				if(token !== null){
+					this.setState({
+						validacao: true
+					})
+				}
+			}
+		);
+		e.preventDefault();
+		this.setState({
+			token: sessionStorage.getItem('token')
+		})
+		
+		alert(`Obrigado ${this.state.name}, seja bem-vindo!`);
+		console.log(this.state.token);
+	}
+
+	handleTextChange(event) {
+		event.preventDefault();
+		this.setState({ name: event.target.value });
+	}
+
+	
+/*
+	handleSubmit(e) {
+		e.preventDefault();
+		let dataToSend = {
+			userData: {
+				name: this.state.name
+			}
+		};
+
+		fetch( Authenticate , {
+			method: "POST",
+			body: JSON.stringify(dataToSend),
+			headers: {
+				"Content-Type": "application/json"
+			}
+		})
+		.then(response => response.json())
+		.then(responseJson => {
+			if(responseJson.sucess){
+				localStorage.setItem('NAME', responseJson.token);
+			}
+		})
+	}
+*/
 	render() {
 		return (
 			<Fragment>
@@ -22,13 +83,15 @@ export default class PedidosChat extends React.Component {
 						<div>
 							<form >
 								<div>
-									<button class="btn waves-effect waves-light format-btn-inserir-nome" type="submit" name="action">Inserir meu Nome</button>
-									<input className="format-input-inserir-nome" type="text" placeholder="Digite o seu nome" />
+									<button className="btn waves-effect waves-light format-btn-inserir-nome" type="submit" onClick={this.handleClick} name="action">Inserir meu Nome </button>
+
+									<input className="format-input-inserir-nome" type="text" placeholder="Digite o seu nome" onChange={this.handleTextChange} value={this.state.name} />
+
 								</div>
 							</form>
 						</div>
 						<div className="mensagens-format">
-							<Chat />
+							{this.state.validacao? <Chat />: null}
 						</div>
 					</div>
 				</div>
