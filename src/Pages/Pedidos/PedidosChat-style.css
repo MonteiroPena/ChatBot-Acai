@@ -1,0 +1,46 @@
+.home-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.home-sidebar{
+    width: 30%;
+    height: 100%;
+}
+.home-main{
+    height: 100%;
+    width: 70%;
+}
+.geral-format{
+    background-color: rgb(188, 92, 226)!important;
+}
+.mensagens-format{
+    overflow-y: scroll;
+    height: 31rem;
+    width: 62rem;
+    
+}
+
+.format-img-pedido{
+    height: 16rem;
+    width: 28rem;
+}
+.format-btn-inserir-nome{
+	width: 190px;
+	height: 50px;
+    background-color: rgb(15, 155, 15);
+	border-radius: 10px;
+	margin: 10px;
+	color: aliceblue;
+}
+.format-btn-inserir-nome:hover{
+    background-color: #00ff00;
+    color: rgba(184, 0, 251, 0.727);
+}
+
+.format-input-inserir-nome{
+	width: 600px !important;
+	margin: 10, 10,10,10 !important;
+	
+}
