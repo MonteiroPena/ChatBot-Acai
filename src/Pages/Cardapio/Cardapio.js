@@ -15,7 +15,6 @@ const TableHead = () => {
 }
 
 const TableBody = props => {
-
 	const itens = props.acai.map((item, index) => {
 		return (
 			<tr key={index}>

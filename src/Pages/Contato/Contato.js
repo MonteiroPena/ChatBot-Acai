@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import Header from '../../Components/Header/Header';
 
 const Contato = () => {
-
 	return (
 		<Fragment>
 			<Header />

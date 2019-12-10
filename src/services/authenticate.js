@@ -7,28 +7,28 @@ const Authenticate = async () => {
 		'https://directline.botframework.com/v3/directline/tokens/generate',
 		{},
 		{
-			headers: {'Authorization': `bearer ${apiKey}`}
+			headers: { 'Authorization': `bearer ${apiKey}` }
 		}
 	)
 		.then(
 			resposta => {
-				
+
 				const { data } = resposta // IDConversa e Token
-				
-				if( data ) {
-					console.log('autenticado',data.token)
+
+				if (data) {
+					console.log('autenticado', data.token)
 					return startConversation(data.token)
 				}
-				
-			
+
+
 			}
-	).catch(
-		error => {
-			console.log(error)
-	});
+		).catch(
+			error => {
+				console.log(error)
+			});
 }
 
-const startConversation = async ( token ) => {
+const startConversation = async (token) => {
 	return await axios.post(
 		'https://directline.botframework.com/v3/directline/conversations',
 		{},

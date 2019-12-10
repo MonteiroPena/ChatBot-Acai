@@ -5,7 +5,6 @@ import LinkWrapper from './LinkWrapper';
 
 
 function Header() {
-
 	return (
 		<div>
 			<nav className="nav-wrapper header col-12" >

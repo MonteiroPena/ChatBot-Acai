@@ -5,7 +5,7 @@ const refreshToken = token => {
 		'https://directline.botframework.com/v3/directline/tokens/refresh',
 		{},
 		{
-			headers: {'Authenticate': `bearer ${token}` }
+			headers: { 'Authenticate': `bearer ${token}` }
 		}
 	)
 }

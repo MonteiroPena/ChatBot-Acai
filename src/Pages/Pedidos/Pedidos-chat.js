@@ -54,7 +54,6 @@ export default class PedidosChat extends React.Component {
 				name: this.state.name
 			}
 		};
-
 		fetch( Authenticate , {
 			method: "POST",
 			body: JSON.stringify(dataToSend),

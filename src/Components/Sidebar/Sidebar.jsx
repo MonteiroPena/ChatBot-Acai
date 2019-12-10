@@ -7,7 +7,6 @@ export default class Sidebar extends Component {
 
 	state = {
 		acai: [
-
 			{
 				tamanho: '300ml',
 				preco: 'R$ 4,00',
