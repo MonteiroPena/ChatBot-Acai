@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ChatBot-Acai/precache-manifest.bb92832e11eb0eeeb39fbec606a250f4.js"
+  "/ChatBot-Acai/precache-manifest.cd0b22c11792c377a1e53b1e53ad4f7a.js"
 );
 
 self.addEventListener('message', (event) => {
