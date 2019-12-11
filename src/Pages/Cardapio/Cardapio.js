@@ -64,8 +64,6 @@ class Cardapio extends Component {
 	}
 
 	render() {
-
-		const { acai } = this.props;
 		return (
 			<div>
 				<table className="table table-striped cardapio-format centered">

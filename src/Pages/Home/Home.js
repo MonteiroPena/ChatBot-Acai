@@ -14,7 +14,7 @@ const Combos = props => {
           <div className="col-3">
             <div className="card">
               <div className="card-image">
-                <img src={item.urlImg} />
+                <img alt="" src={item.urlImg} />
               </div>
               <div className="card-content">
                 <p>{item.descCombo}<b>{item.precoCombo}</b></p>
@@ -60,7 +60,6 @@ class Home extends Component {
   }
 
   render() {
-    const { promoction } = this.props;
     return (
       <Fragment>
         <Header />

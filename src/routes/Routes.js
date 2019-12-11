@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {
-    BrowserRouter,
+    Router,
     Route,
     Switch
 } from 'react-router-dom';
@@ -15,7 +15,7 @@ import PedidosChat from '../Pages/Pedidos/Pedidos-chat';
 import NotFound from '../Pages/NotFound/NotFound';
 
 const Routes = () => (
-    <BrowserRouter history={history}>
+    <Router history={history}>
         <Switch>
             <Route path='/' exact={true} component={Home} />
             <Route path='/cardapio' component={Home} />
@@ -23,7 +23,7 @@ const Routes = () => (
             <Route path='/pedidos' component={PedidosChat} />
             <Route component={NotFound} />
         </Switch>
-    </BrowserRouter>
+    </Router>
 )
 export default Routes;
 //
