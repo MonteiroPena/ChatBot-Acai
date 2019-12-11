@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, Component } from 'react'
 
 // Componentes
 import Chat from '../../Components/Chat/Chat'
@@ -9,13 +9,13 @@ import './PedidosChat-style.css'
 import { Authenticate } from '../../services/authenticate';
 
 
-export default class PedidosChat extends React.Component {
+export default class PedidosChat extends Component {
 
 	constructor(props) {
 		super(props);
 		this.handleClick = this.handleClick.bind(this);
 		this.handleTextChange = this.handleTextChange.bind(this);
-	//	this.handleSubmit = this.handleSubmit.bind(this);
+		//	this.handleSubmit = this.handleSubmit.bind(this);
 		this.state = { name: '', token: '', validacao: false }
 	}
 
@@ -24,7 +24,7 @@ export default class PedidosChat extends React.Component {
 	handleClick(e) {
 		Authenticate().then(
 			token => {
-				if(token !== null){
+				if (token !== null) {
 					this.setState({
 						validacao: true
 					})
@@ -35,7 +35,7 @@ export default class PedidosChat extends React.Component {
 		this.setState({
 			token: sessionStorage.getItem('token')
 		})
-		
+
 		alert(`Obrigado ${this.state.name}, seja bem-vindo!`);
 		console.log(this.state.token);
 	}
@@ -45,30 +45,30 @@ export default class PedidosChat extends React.Component {
 		this.setState({ name: event.target.value });
 	}
 
-	
-/*
-	handleSubmit(e) {
-		e.preventDefault();
-		let dataToSend = {
-			userData: {
-				name: this.state.name
-			}
-		};
-		fetch( Authenticate , {
-			method: "POST",
-			body: JSON.stringify(dataToSend),
-			headers: {
-				"Content-Type": "application/json"
-			}
-		})
-		.then(response => response.json())
-		.then(responseJson => {
-			if(responseJson.sucess){
-				localStorage.setItem('NAME', responseJson.token);
-			}
-		})
-	}
-*/
+
+	/*
+		handleSubmit(e) {
+			e.preventDefault();
+			let dataToSend = {
+				userData: {
+					name: this.state.name
+				}
+			};
+			fetch( Authenticate , {
+				method: "POST",
+				body: JSON.stringify(dataToSend),
+				headers: {
+					"Content-Type": "application/json"
+				}
+			})
+			.then(response => response.json())
+			.then(responseJson => {
+				if(responseJson.sucess){
+					localStorage.setItem('NAME', responseJson.token);
+				}
+			})
+		}
+	*/
 	render() {
 		return (
 			<Fragment>
@@ -90,7 +90,7 @@ export default class PedidosChat extends React.Component {
 							</form>
 						</div>
 						<div className="mensagens-format">
-							{this.state.validacao? <Chat />: null}
+							{this.state.validacao ? <Chat /> : null}
 						</div>
 					</div>
 				</div>

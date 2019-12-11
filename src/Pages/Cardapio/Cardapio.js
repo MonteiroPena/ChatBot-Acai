@@ -25,7 +25,7 @@ const TableBody = props => {
 			</tr>
 		);
 	});
-	return(
+	return (
 		<tbody>
 			{itens}
 		</tbody>
@@ -33,6 +33,36 @@ const TableBody = props => {
 }
 
 class Cardapio extends Component {
+
+	state = {
+		acai: [
+			{
+				tamanho: '300ml',
+				preco: 'R$ 4,00',
+				adicional: 'Leite em pó',
+				precoAdicional: 'R$ 1,00'
+			},
+			{
+				tamanho: '500ml',
+				preco: 'R$ 6,00',
+				adicional: 'Leite condensado',
+				precoAdicional: 'R$ 1,00'
+			},
+			{
+				tamanho: '700ml',
+				preco: 'R$ 8,00',
+				adicional: 'Granola',
+				precoAdicional: 'R$ 1,00'
+			},
+			{
+				tamanho: '1L',
+				preco: 'R$ 10,00',
+				adicional: 'Paçoca',
+				precoAdicional: 'R$ 1,00'
+			}
+		]
+	}
+
 	render() {
 
 		const { acai } = this.props;
@@ -40,7 +70,7 @@ class Cardapio extends Component {
 			<div>
 				<table className="table table-striped cardapio-format centered">
 					<TableHead />
-					<TableBody acai={acai} />
+					<TableBody acai={this.state.acai} />
 				</table>
 			</div>
 		);

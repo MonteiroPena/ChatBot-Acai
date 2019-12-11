@@ -1,7 +1,19 @@
 import React, { Fragment } from 'react';
 import Header from '../../Components/Header/Header';
 
+const DadosContato = () => {
+	return (
+		<div className="center col-5">
+			<p><b>E-mail:</b> acai@acai.com.br</p>
+			<p><b>Telefone:</b> (11) 4002-8922</p>
+			<p><b>Whatsapp:</b> (11) 99195-6364</p>
+			<p><b>Endereço:</b> Av. 9 de Julho, 251</p>
+		</div>
+	);
+}
+
 const Contato = () => {
+
 	return (
 		<Fragment>
 			<Header />
@@ -18,12 +30,7 @@ const Contato = () => {
 						</div>
 					</div>
 				</div>
-				<div className="center col-5">
-					<p><b>E-mail:</b> acai@acai.com.br</p>
-					<p><b>Telefone:</b> (11) 4002-8922</p>
-					<p><b>Whatsapp:</b> (11) 99195-6364</p>
-					<p><b>Endereço:</b> Av. 9 de Julho, 251</p>
-				</div>
+				<DadosContato/>
 			</div>
 		</Fragment>
 	);

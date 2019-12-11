@@ -1,11 +1,11 @@
 
 import { DirectLine } from 'botframework-directlinejs';
-import React from 'react';
+import React, { Component }from 'react';
 import ReactWebChat from 'botframework-webchat';
 import apiKey from "../../services/apiKey";
 import './Chat-style.css';
 
-export default class extends React.Component {
+export default class extends Component {
 	constructor(props) {
 		super(props);
 		
