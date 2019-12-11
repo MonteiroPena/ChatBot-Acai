@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ChatBot-Acai/static/css/main.8740ae2e.chunk.css",
+    "main.js": "/ChatBot-Acai/static/js/main.4a35cfcd.chunk.js",
+    "main.js.map": "/ChatBot-Acai/static/js/main.4a35cfcd.chunk.js.map",
+    "runtime-main.js": "/ChatBot-Acai/static/js/runtime-main.ab484945.js",
+    "runtime-main.js.map": "/ChatBot-Acai/static/js/runtime-main.ab484945.js.map",
+    "static/css/2.0441cb4d.chunk.css": "/ChatBot-Acai/static/css/2.0441cb4d.chunk.css",
+    "static/js/2.479b8510.chunk.js": "/ChatBot-Acai/static/js/2.479b8510.chunk.js",
+    "static/js/2.479b8510.chunk.js.map": "/ChatBot-Acai/static/js/2.479b8510.chunk.js.map",
+    "index.html": "/ChatBot-Acai/index.html",
+    "precache-manifest.aaa5ef4d9011804123d86bd667f5c786.js": "/ChatBot-Acai/precache-manifest.aaa5ef4d9011804123d86bd667f5c786.js",
+    "service-worker.js": "/ChatBot-Acai/service-worker.js",
+    "static/css/2.0441cb4d.chunk.css.map": "/ChatBot-Acai/static/css/2.0441cb4d.chunk.css.map",
+    "static/css/main.8740ae2e.chunk.css.map": "/ChatBot-Acai/static/css/main.8740ae2e.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab484945.js",
+    "static/css/2.0441cb4d.chunk.css",
+    "static/js/2.479b8510.chunk.js",
+    "static/css/main.8740ae2e.chunk.css",
+    "static/js/main.4a35cfcd.chunk.js"
+  ]
+}
