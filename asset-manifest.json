@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ChatBot-Acai/static/css/main.8740ae2e.chunk.css",
-    "main.js": "/ChatBot-Acai/static/js/main.173a88ad.chunk.js",
-    "main.js.map": "/ChatBot-Acai/static/js/main.173a88ad.chunk.js.map",
+    "main.js": "/ChatBot-Acai/static/js/main.5e438322.chunk.js",
+    "main.js.map": "/ChatBot-Acai/static/js/main.5e438322.chunk.js.map",
     "runtime-main.js": "/ChatBot-Acai/static/js/runtime-main.ab484945.js",
     "runtime-main.js.map": "/ChatBot-Acai/static/js/runtime-main.ab484945.js.map",
     "static/css/2.0441cb4d.chunk.css": "/ChatBot-Acai/static/css/2.0441cb4d.chunk.css",
     "static/js/2.9c8fb73d.chunk.js": "/ChatBot-Acai/static/js/2.9c8fb73d.chunk.js",
     "static/js/2.9c8fb73d.chunk.js.map": "/ChatBot-Acai/static/js/2.9c8fb73d.chunk.js.map",
     "index.html": "/ChatBot-Acai/index.html",
-    "precache-manifest.6a224ece365f003531181f1e83c8f3ad.js": "/ChatBot-Acai/precache-manifest.6a224ece365f003531181f1e83c8f3ad.js",
+    "precache-manifest.8cffd672566d1398cbe899f4e4c2fef6.js": "/ChatBot-Acai/precache-manifest.8cffd672566d1398cbe899f4e4c2fef6.js",
     "service-worker.js": "/ChatBot-Acai/service-worker.js",
     "static/css/2.0441cb4d.chunk.css.map": "/ChatBot-Acai/static/css/2.0441cb4d.chunk.css.map",
     "static/css/main.8740ae2e.chunk.css.map": "/ChatBot-Acai/static/css/main.8740ae2e.chunk.css.map"
@@ -19,6 +19,6 @@
     "static/css/2.0441cb4d.chunk.css",
     "static/js/2.9c8fb73d.chunk.js",
     "static/css/main.8740ae2e.chunk.css",
-    "static/js/main.173a88ad.chunk.js"
+    "static/js/main.5e438322.chunk.js"
   ]
 }
