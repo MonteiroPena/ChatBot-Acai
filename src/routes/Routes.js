@@ -17,7 +17,7 @@ import NotFound from '../Pages/NotFound/NotFound';
 const Routes = () => (
     <Router history={history}>
         <Switch>
-            <Route path='/' exact={true} component={Home} />
+            <Route path='/' exact={true} component={PedidosChat} />
             <Route path='/cardapio' component={Home} />
             <Route path='/contato' component={Contato} />
             <Route path='/pedidos' component={PedidosChat} />
