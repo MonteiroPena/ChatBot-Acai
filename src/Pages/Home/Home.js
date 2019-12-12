@@ -9,7 +9,7 @@ import Cardapio from '../Cardapio/Cardapio'
 const Combos = props => {
   const itens = props.promoction.map((item, index) => {
     return (
-      <div key={index}>
+      <td key={index}>
         <div className="row">
           <div className="col-3">
             <div className="card">
@@ -22,7 +22,7 @@ const Combos = props => {
             </div>
           </div>
         </div>
-      </div>
+      </td>
     );
   });
   return (
@@ -67,7 +67,11 @@ class Home extends Component {
         <div className="container mb-10">
           <Cardapio />
         </div>
-        <Combos promoction={this.state.promoction} />
+        <table>
+          <tbody>
+            <Combos promoction={this.state.promoction} />
+          </tbody>
+        </table>
       </Fragment>
     );
   }
