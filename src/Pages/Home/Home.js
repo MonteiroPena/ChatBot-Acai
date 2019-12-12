@@ -10,16 +10,12 @@ const Combos = props => {
   const itens = props.promoction.map((item, index) => {
     return (
       <td key={index}>
-        <div className="row">
-          <div className="col-3">
-            <div className="card">
-              <div className="card-image">
-                <img alt="" src={item.urlImg} />
-              </div>
-              <div className="card-content">
-                <p>{item.descCombo}<b>{item.precoCombo}</b></p>
-              </div>
-            </div>
+        <div className="card">
+          <div className="card-image">
+            <img alt="" src={item.urlImg} />
+          </div>
+          <div className="card-content">
+            <p>{item.descCombo}<b>{item.precoCombo}</b></p>
           </div>
         </div>
       </td>
