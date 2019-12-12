@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3f2e388cc8c3a153bc25e71ef77e7651",
+    "revision": "94afaee939207807af1f0a056f96acda",
     "url": "/ChatBot-Acai/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ChatBot-Acai/static/css/2.0441cb4d.chunk.css"
   },
   {
-    "revision": "0dfb04502ee63f3adfb7",
+    "revision": "b8be9b7a4b08ba8c4a84",
     "url": "/ChatBot-Acai/static/css/main.8740ae2e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ChatBot-Acai/static/js/2.9c8fb73d.chunk.js"
   },
   {
-    "revision": "0dfb04502ee63f3adfb7",
-    "url": "/ChatBot-Acai/static/js/main.a4f67479.chunk.js"
+    "revision": "b8be9b7a4b08ba8c4a84",
+    "url": "/ChatBot-Acai/static/js/main.a0893645.chunk.js"
   },
   {
     "revision": "bd88e93d35c10383a6c9",
